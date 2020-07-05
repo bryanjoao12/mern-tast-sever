@@ -24,6 +24,6 @@ app.use("/api/tareas", require("./routes/tareas"));
 // Definir pagina principal
 
 // arrancar servidor
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`Server on port ${port}`);
 });
