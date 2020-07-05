@@ -14,7 +14,7 @@ app.use(cors());
 // Habilitar express.json
 app.use(express.json({ extended: true }));
 // pruerto de la app
-const PORT = process.env.PORT ||5000;
+const port = process.env.port ||5000;
 
 //Import rutas
 app.use("/api/usuarios", require("./routes/users"));
@@ -24,6 +24,6 @@ app.use("/api/tareas", require("./routes/tareas"));
 // Definir pagina principal
 
 // arrancar servidor
-app.listen(PORT, () => {
-  console.log(`Server on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server on port ${port}`);
 });
